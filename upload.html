@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <title>Compose</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles2.css">
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">WordOut</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item element">
+            <a class="nav-link" href="#">Feed<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item element">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item dropdown element">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hindi</a>
+              <a class="dropdown-item" href="#">English</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Trending</a>
+            </div>
+          </li>
+          <li class="nav-item  element">
+            <a class="nav-link" href="#" >Compose</a>
+          </li>
+          <li class="nav-item element">
+            <a class="nav-link" href="#">Log Out</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 element" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary my-2 my-sm-0 element" type="submit">Search</button>
+
+        </form>
+      </div>
+    </nav>
+
+
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group box">
+        <label class="text" for="">Title</label>
+        <input class="form-control title" type="text" name="heading" value="">
+        <label class="text"  for="">Post</label>
+        <textarea class="form-control post" name="para" rows="10" cols="100"></textarea>
+        <label class="text"  for="">Author's Name</label>
+        <input class="form-control title" type="text" name="writer" value="">
+        <div class="row">
+          <div class="btndiv col-lg-3 col-md-4 col-sm-12">
+            <button class="btn sub btn-secondary" type="submit" name="button">Upload</button>
+          </div>
+          <div class="btndiv col-lg-3 col-md-4 col-sm-12">
+            <button class="btn sub btn-outline-secondary " name="button">Save as Draft</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+  </body>
+</html>
